@@ -1,0 +1,34 @@
+{
+  "name": "flutterdaycli",
+  "version": "0.0.1",
+  "description": "Demo CLI for Flutter apps.",
+  
+  "scripts": {
+    "create": "npm run build && npm run test",
+    "build": "tsc -d -p .",
+    "test": "sudo npm i -g && jarvis",
+    "refresh": "rm -rf ./node_modules ./package-lock.json ./dist && npm install"
+  },
+  "keywords": [
+    "cli",
+    "typescript",
+    "flutter",
+    "nodejs"
+  ],
+  "author": "Carlos R. Perez",
+  "license": "MIT",
+  "main": "dist/lib/index",
+  "bin": {
+    "jarvis": "dist/lib/index.js"
+  },
+  "dependencies": {
+    "commander": "^2.20.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^6.14.9",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2"
+  }
+}
