@@ -1,8 +1,5 @@
 #!/usr/bin/env node
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const chalk = require('chalk');
-const path = require('path');
 const program = require('commander');
 const { exec } = require('child_process');
 program
@@ -15,7 +12,6 @@ program
     switch (stageName) {
         case "analyze": {
             console.log("Analyze");
-            console.log("mierda");
             exec("/Users/caulpermor/Development/flutter/bin/flutter analyze --no-pub", (err, stdout, stderr) => {
                 if (err) {
                     console.log(stderr);

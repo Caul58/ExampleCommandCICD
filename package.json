@@ -2,7 +2,6 @@
   "name": "flutterdaycli",
   "version": "0.0.1",
   "description": "Demo CLI for Flutter apps.",
-  
   "scripts": {
     "create": "npm run build && npm run test",
     "build": "tsc -d -p .",
@@ -30,6 +29,6 @@
     "@types/node": "^6.14.9",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
-    "typescript": "^2.9.2"
+    "typescript": "^3.9.10"
   }
 }
